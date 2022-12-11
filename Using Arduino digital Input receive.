@@ -1,0 +1,14 @@
+// Using Arduino digital Input receive . 
+int led=13;
+int inputpin=4;
+int value;
+
+void setup(){
+  pinMode(led,OUTPUT);
+  pinMode(inputpin,INPUT);
+}
+  void loop()
+  {
+  value=digitalRead(inputpin);
+    digitalWrite(led,value);
+}
