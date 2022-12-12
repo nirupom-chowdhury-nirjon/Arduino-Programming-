@@ -1,0 +1,17 @@
+/*How to use analog input as delay */
+int value;
+int led=13;
+
+void setup(){
+  pinMode(A0,INPUT);
+  pinMode(led,OUTPUT);
+  Serial.begin(9600);//It is the special command for using serial monitor .When we want to see the value in serial monitor then we use these command . 
+}
+void loop(){
+value =analogRead(A0);
+  Serial.println(value);
+  digitalWrite(led,HIGH);
+  delay(value);
+  digitalWrite(led,LOW);
+  delay(value);
+}
