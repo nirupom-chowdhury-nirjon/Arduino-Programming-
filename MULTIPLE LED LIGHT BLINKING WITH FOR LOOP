@@ -1,0 +1,15 @@
+//MULTIPLE LED LIGHT BLINKING WITH FOR LOOP . 
+int i;
+void setup(){
+  for(i=9;i>=4;i--){
+  pinMode(i,OUTPUT);
+  }
+}
+void loop(){
+  for(i=9;i>=4;i--){
+    digitalWrite(i,HIGH);
+    delay(100);
+    digitalWrite(i,LOW);
+    delay(100);
+  }
+}
