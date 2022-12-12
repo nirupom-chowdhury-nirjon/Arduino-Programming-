@@ -1,0 +1,13 @@
+//Using for loop to controll LED light and speed of light .
+int led=6;
+int i;
+void setup(){
+  pinMode(led,OUTPUT);
+}
+void loop(){
+  for(i=0;i<255;i=i+5){
+    analogWrite(led,i);
+    delay(100);
+  }
+}
+    
