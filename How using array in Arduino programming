@@ -1,0 +1,16 @@
+/*How using array in Arduino programming */
+int pattern[4]={12,11,10,9};
+int i;
+void setup(){
+  for(i=0;i<4;i++){
+    pinMode(pattern[i],OUTPUT);
+  }
+}
+void loop(){
+  for(i=0;i<4;i++){
+    digitalWrite(pattern[i],HIGH);
+    delay(100);
+    digitalWrite(pattern[i],LOW);
+    delay(100);
+  }
+}
